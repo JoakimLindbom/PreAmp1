@@ -1,0 +1,175 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4250 4250 3850 4250
+Wire Wire Line
+	4150 3550 5650 3550
+Wire Wire Line
+	5650 3750 5300 3750
+Wire Wire Line
+	5650 3650 5550 3650
+Wire Wire Line
+	5550 3650 5550 4250
+Wire Wire Line
+	6500 4250 6500 3750
+Wire Wire Line
+	6500 3750 6250 3750
+Connection ~ 5550 4250
+Wire Wire Line
+	5300 3200 6500 3200
+Wire Wire Line
+	6500 3200 6500 3550
+Wire Wire Line
+	6500 3550 6250 3550
+Wire Wire Line
+	3200 3850 3650 3850
+Wire Wire Line
+	3650 3850 3650 4250
+Wire Wire Line
+	3650 4250 3850 4250
+Connection ~ 3850 4250
+Text Label 6300 4250 0    50   ~ 0
+GND
+Connection ~ 4250 4250
+Wire Wire Line
+	5550 4250 6500 4250
+Connection ~ 4700 4250
+Wire Wire Line
+	5550 4250 4700 4250
+Wire Wire Line
+	4700 4250 4250 4250
+Text Label 3350 3850 0    50   ~ 0
+GND
+Text Label 3350 3750 0    50   ~ 0
+BUTTON
+Text Label 3350 3650 0    50   ~ 0
+B
+Text Label 3350 3550 0    50   ~ 0
+A
+Wire Wire Line
+	4250 3950 4250 3750
+Wire Wire Line
+	3650 3750 3200 3750
+Wire Wire Line
+	3850 3950 3850 3550
+Wire Wire Line
+	3200 3650 4250 3650
+Connection ~ 3850 3550
+Wire Wire Line
+	3200 3550 3850 3550
+Wire Wire Line
+	3650 3200 3650 3750
+$Comp
+L Device:CP C3
+U 1 1 6032C379
+P 4700 4100
+F 0 "C3" H 4818 4146 50  0000 L CNN
+F 1 "0.1uF" H 4818 4055 50  0000 L CNN
+F 2 "" H 4738 3950 50  0001 C CNN
+F 3 "~" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 6032A502
+P 3850 4100
+F 0 "C1" H 3968 4146 50  0000 L CNN
+F 1 "0.1uF" H 3968 4055 50  0000 L CNN
+F 2 "" H 3888 3950 50  0001 C CNN
+F 3 "~" H 3850 4100 50  0001 C CNN
+	1    3850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 6032C191
+P 4250 4100
+F 0 "C2" H 4368 4146 50  0000 L CNN
+F 1 "0.1uF" H 4368 4055 50  0000 L CNN
+F 2 "" H 4288 3950 50  0001 C CNN
+F 3 "~" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6032BE6B
+P 5150 3200
+F 0 "R2" V 4943 3200 50  0000 C CNN
+F 1 "22k" V 5034 3200 50  0000 C CNN
+F 2 "" V 5080 3200 50  0001 C CNN
+F 3 "~" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60329B8B
+P 4000 3550
+F 0 "R1" V 3793 3550 50  0000 C CNN
+F 1 "22k" V 3884 3550 50  0000 C CNN
+F 2 "" V 3930 3550 50  0001 C CNN
+F 3 "~" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW1
+U 1 1 603289A4
+P 5950 3650
+F 0 "SW1" H 5950 4017 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 5950 3926 50  0000 C CNN
+F 2 "" H 5800 3810 50  0001 C CNN
+F 3 "~" H 5950 3910 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 603280F2
+P 3000 3650
+F 0 "J1" H 3108 3931 50  0000 C CNN
+F 1 "Conn_01x04" H 3108 3840 50  0000 C CNN
+F 2 "" H 3000 3650 50  0001 C CNN
+F 3 "~" H 3000 3650 50  0001 C CNN
+	1    3000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6032BFCE
+P 5150 3750
+F 0 "R3" V 4943 3750 50  0000 C CNN
+F 1 "22k" V 5034 3750 50  0000 C CNN
+F 2 "" V 5080 3750 50  0001 C CNN
+F 3 "~" H 5150 3750 50  0001 C CNN
+	1    5150 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3200 4700 3200
+Wire Wire Line
+	4700 3950 4700 3200
+Connection ~ 4700 3200
+Wire Wire Line
+	4700 3200 5000 3200
+Wire Wire Line
+	5000 3750 4250 3750
+Connection ~ 4250 3750
+Wire Wire Line
+	4250 3750 4250 3650
+$EndSCHEMATC
