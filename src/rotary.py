@@ -22,8 +22,9 @@ from typing import Dict
 
 testing = True
 
-if not testing:
+if testing == False:
     from usagecollector.client import report_usage
+
     from ac2.plugins.control.controller import Controller
 else:
     class Controller():
@@ -38,6 +39,9 @@ class Rotary(Controller):
 
     def __init__(self, params: Dict[str, str] = None):
         super().__init__()
+
+        logging.basicConfig(level=logging.INFO)
+        logging.info("Starting up!")
 
         self.clk = 4
         self.dt = 17
@@ -73,6 +77,7 @@ class Rotary(Controller):
             except:
                 logging.error("can't parse %s", params["step"])
 
+        print("X1")
         logging.info("initializing rotary controller on GPIOs "
                      " clk=%s, dt=%s, sw=%s, step=%s%%",
                      self.clk, self.dt, self.sw, self.step)
@@ -90,21 +95,32 @@ class Rotary(Controller):
             self.volumecontrol.change_volume_percent(self.step)
             report_usage("audiocontrol_rotary_volume", 1)
         else:
-            logging.info("no volume control, ignoring rotary control - INCREASE")
+            logging.info("no volume control, ignoring rotary control -- INCREASE")
+            print("INC")
 
     def decrease(self, val):
         if self.volumecontrol is not None:
             self.volumecontrol.change_volume_percent(-self.step)
             report_usage("audiocontrol_rotary_volume", 1)
         else:
-            logging.info("no volume control, ignoring rotary control - DECREASE")
+            logging.info("no volume control, ignoring rotary control -- DECREASE")
+            print("DEC")
 
     def button(self):
         if self.playercontrol is not None:
             self.playercontrol.playpause()
             report_usage("audiocontrol_rotary_button", 1)
         else:
-            logging.info("no player control, ignoring press - BUTTON PRESS")
+            logging.info("no player control, ignoring press -- BUTTON PRESSED")
 
     def run(self):
+        print("X")
         self.encoder.watch()
+
+def callback(pos):
+    print(f'Position is {pos}')
+
+if __name__ == "__main__":
+    print("A")
+    a = Rotary()
+    a.run()
