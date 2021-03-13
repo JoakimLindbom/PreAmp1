@@ -32,9 +32,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="283.97533"
-     inkscape:cy="565.12802"
+     inkscape:zoom="0.5"
+     inkscape:cx="-44.196347"
+     inkscape:cy="569.82451"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -104,13 +104,6 @@
        x="-138.38716"
        y="-193.09779"
        transform="rotate(89.815225)" />
-    <rect
-       style="fill:#999999;stroke-width:0.264583"
-       id="rect357"
-       width="16"
-       height="20"
-       x="225.06065"
-       y="231.06421" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.09106px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.177277"
@@ -159,18 +152,6 @@
          y="-232.70203"
          transform="rotate(90)" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:7.09107px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.177277"
-       x="194.02103"
-       y="288.63632"
-       id="text361-9"
-       transform="scale(1.160597,0.86162552)"><tspan
-         sodipodi:role="line"
-         id="tspan359-1"
-         x="194.02103"
-         y="288.63632"
-         style="stroke-width:0.177277">ETH</tspan></text>
     <text
        xml:space="preserve"
        id="text344"
@@ -502,7 +483,7 @@
     </g>
     <g
        id="g1489"
-       transform="translate(329.33828,-54.031498)">
+       transform="translate(308.65294,-54.031498)">
       <rect
          style="fill:#0000ff;stroke-width:0.264583"
          id="rect47"
@@ -693,6 +674,50 @@
            y="181.48892"
            style="fill:#ffffff;stroke-width:0.246676"
            id="tspan1377" /></text>
+    </g>
+    <g
+       id="g2267">
+      <rect
+         style="fill:#ffcc00;stroke-width:0.293277"
+         id="rect2210"
+         width="23"
+         height="10.5"
+         x="118.82616"
+         y="217.33601" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.48654px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.162164"
+         x="133.80525"
+         y="208.85889"
+         id="text2244"
+         transform="scale(0.92746269,1.0782105)"><tspan
+           sodipodi:role="line"
+           id="tspan2242"
+           x="133.80525"
+           y="208.85889"
+           style="stroke-width:0.162164">RCA</tspan></text>
+    </g>
+    <g
+       id="g2272">
+      <rect
+         style="fill:#ffcc00;stroke-width:0.293277"
+         id="rect2210-0"
+         width="23.000002"
+         height="10.5"
+         x="118.11488"
+         y="231.13034" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.48655px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.162164"
+         x="134.18369"
+         y="221.66264"
+         id="text2244-6"
+         transform="scale(0.92746269,1.0782105)"><tspan
+           sodipodi:role="line"
+           id="tspan2242-1"
+           x="134.18369"
+           y="221.66264"
+           style="stroke-width:0.162164">RCA</tspan></text>
     </g>
   </g>
 </svg>
