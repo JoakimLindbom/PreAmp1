@@ -1,0 +1,18 @@
+buttons:
+  - button1:
+    name: "mute"
+    type: "Latch"
+    GPIO: 3
+    default: "off"
+  - button2:
+    name: "InpoutSelector"
+    type: "Radio"
+    default: "6"
+    GPIO:
+      - 4
+      - 5
+      - 6
+  - button3:
+    name: "DSP compare"
+    Type: "Momentary"
+    GPIO: 7
