@@ -20,17 +20,9 @@ SOFTWARE.
 import logging
 from typing import Dict
 
-testing = True
+from usagecollector.client import report_usage
 
-if testing == False:
-    from usagecollector.client import report_usage
-
-    from ac2.plugins.control.controller import Controller
-else:
-    class Controller():
-        def __init__(self):
-            self.volumecontrol = None
-            self.playercontrol = None
+from ac2.plugins.control.controller import Controller
 
 from pyky040 import pyky040
 
@@ -38,7 +30,7 @@ from pyky040 import pyky040
 class Rotary(Controller):
 
     def __init__(self, params: Dict[str, str] = None):
-        super().__init__()
+        #super().__init__()
 
         logging.basicConfig(level=logging.INFO)
         logging.info("Starting up!")
@@ -95,23 +87,21 @@ class Rotary(Controller):
             self.volumecontrol.change_volume_percent(self.step)
             report_usage("audiocontrol_rotary_volume", 1)
         else:
-            logging.info("no volume control, ignoring rotary control -- INCREASE")
-            print("INC")
+            logging.info("no volume control, ignoring rotary control")
 
     def decrease(self, val):
         if self.volumecontrol is not None:
             self.volumecontrol.change_volume_percent(-self.step)
             report_usage("audiocontrol_rotary_volume", 1)
         else:
-            logging.info("no volume control, ignoring rotary control -- DECREASE")
-            print("DEC")
+            logging.info("no volume control, ignoring rotary control")
 
     def button(self):
         if self.playercontrol is not None:
             self.playercontrol.playpause()
             report_usage("audiocontrol_rotary_button", 1)
         else:
-            logging.info("no player control, ignoring press -- BUTTON PRESSED")
+            logging.info("no player control, ignoring press")
 
     def run(self):
         print("X")
@@ -120,7 +110,7 @@ class Rotary(Controller):
 def callback(pos):
     print(f'Position is {pos}')
 
-if __name__ == "__main__":
+if __name__ == "main":
     print("A")
     a = Rotary()
     a.run()
